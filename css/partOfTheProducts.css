@@ -1,0 +1,107 @@
+.sectionAlignment{margin: 64px 0;}
+
+/* Parte do título */
+
+.sectionAlignment .sectionTitle{
+
+    align-items: center;
+    justify-content: space-between;
+
+}
+.sectionTitle h2,
+.sectionTitle a,
+#addProduct{margin: 0 10%;}
+
+.sectionTitle .linkToSeeAllProducts img[alt='row']{
+    
+    margin-left: 12px;
+    vertical-align: middle;
+
+}
+
+/* Agrupamento de divs de produto */
+
+.parentBoxOfSmallBoxes{
+
+    margin: 16px 10% 0 10%;
+    width: auto;
+    justify-content: space-between;
+
+}
+.parentBoxOfSmallBoxes div:nth-child(1){margin-left: 0;}
+
+/* Caixa dos produtos */
+
+.productBox{
+    
+    margin-left: 2%;
+    cursor: pointer;
+
+}
+.productBox .productImage{width: 100%;}
+.productBox .productTitle{
+
+    color: #464646;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 8px 0;
+
+}
+.productBox .price{
+
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+
+}
+
+@media screen and (max-width:960px){
+
+    /* Propriedade que faz algumas caixas sumirem */
+    .sectionAlignment .displayNone{display:none;}
+
+    .sectionAlignment {margin: 32px 0;}
+
+    /* Agrupamento de divs de produto */
+    .parentBoxOfSmallBoxes{
+        
+        flex-wrap: wrap;
+        margin: 16px 5% 0 5%;
+    
+    }
+
+    /* Parte do título */
+
+    .sectionTitle .linkToSeeAllProducts{margin-right: 5%;}
+    .sectionTitle h2{margin-left: 5%;}
+
+    /* Parte da caixa do produto */
+    .productBox .productImage {width: 20.5vw;}
+
+    .productBox .productTitle{font-size: 1.8vw;}
+
+}
+
+
+@media screen and (max-width:561px){
+
+    .sectionAlignment {margin: 16px 0;}
+
+    /* Agrupamento de divs de produto */
+    .parentBoxOfSmallBoxes div:nth-child(3){margin:0;}
+
+    /* Parte do título */
+    .linkToSeeProduct{font-size: 14px;}
+    .sectionTitle h2{font-size: 22px;}
+
+    /* Parte da caixa do produto */
+
+    .productBox{margin-bottom: 16px;}
+
+    .productBox .productTitle{font-size: 14px;}
+    .productBox .productImage{width: 42vw;}
+
+    .sectionTitle .linkToSeeAllProducts{font-size: 14px;}
+    .sectionTitle .linkToSeeAllProducts img[alt='row']{margin-left: 6.67px;}
+
+}

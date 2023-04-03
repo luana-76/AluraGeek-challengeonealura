@@ -1,0 +1,188 @@
+footer{background: #EAF2FD;}
+
+/* Caixa principal do foot */
+#contactSection{
+
+    justify-content: space-between;
+    margin: 0px 10%;
+    padding: 64px 0;
+
+}
+
+#sub_contactSection{
+
+    justify-content: space-around;
+    width: 40%;
+
+}
+
+/* Estilização da caixa e nome da página */
+
+/* Alinhamento da caixa do nome da página */
+#sub_contactSection div:nth-child(1){align-self: flex-start;}
+
+#sub_contactSection .pageNameBox{margin: 0;}
+#sub_contactSection .namePage{font-size: 24px;}
+
+/* Parte da lista de links de contato */
+
+#storeInformation{
+    
+    margin: 0;
+    padding: 0;
+
+}
+#storeInformation .linkFooter:nth-child(6){margin-bottom: 0px;}
+
+#storeInformation li{margin-bottom: 20%;}
+#storeInformation .linkFooter{
+
+    color: #464646;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+/* Parte da estilização do formulário */
+
+#partOfTheForm h2{
+    
+    font-size: 16px;
+    margin: 0 0 8px 0;
+
+}
+
+/* Borda das caixas de input */
+.inputDiv,
+textarea{
+    
+    border-bottom: 1px solid #c3c3c3;
+    border-radius: 4px;
+    width: 40.7vw;
+
+}
+
+/* Caixa que ira segurar a caixa do input do nome */
+#partOfTheForm .inputDiv{
+
+    background: #fff;
+    height: 56px;
+    padding: 8px 12px;
+
+}
+
+.inputDiv label{
+
+    color: #A2A2A2;
+    font-weight: 400;
+    font-size: 12px;
+
+}
+
+.inputDiv input{
+
+    font-size: 16px;
+    margin: 10px 0;
+    padding-top: 10px;
+
+}
+
+textarea{
+
+    font-size: 16px;
+    height: 82px;
+    margin: 16px 0 0 0;
+    padding: 16px 12px;
+
+}
+
+#buttonSubmit{
+
+    width: 165px;
+    height: 51px;
+
+}
+
+/* Estilização do span de erro */
+
+#spanName,
+#spanText{
+    
+    font-size: 13px;
+    margin: 5px 0;
+
+}
+
+#spanName{margin-bottom: 0;}
+#spanText{margin-bottom: 8px;}
+
+/* Parte do  copyright */
+
+#copyright{
+    
+    background: #fff;
+    padding: 32px 0;
+
+}
+#copyright p{
+
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+@media screen and (max-width:1200px){#storeInformation li{margin-bottom: 16%;}}
+@media screen and (max-width:960px){
+
+    #contactSection{
+        
+        padding:32px 0;
+        margin: 0px 5%;
+    
+    }
+
+    #sub_contactSection{flex-direction: column;}
+
+    /* Alinhamento da caixa do nome da página */
+
+    #contactSection .pageNameBox{margin: 0 0 26.42px 0;}
+    #contactSection .pageNameBox .imgControl{width: 35px;}
+
+    /* Parte da lista de links de contato */
+
+    #storeInformation li{margin-bottom: 30px;}
+    #storeInformation li:nth-child(6){margin-bottom:0;}
+
+    /* Parte da estilização do formulário */
+
+    #partOfTheForm .inputDiv,
+    textarea{width: 51.7vw;}
+
+}
+
+@media screen and (max-width:561px){
+
+    #contactSection {
+
+        align-items: center;
+        flex-direction: column;
+        padding: 26.42px 0;
+
+    }
+
+    #sub_contactSection{
+        
+        text-align: center;
+        width: auto;
+
+    }
+    
+    /* Parte da lista de links de contato */
+    #storeInformation{margin-bottom: 32px;}
+
+    /* Parte da estilização do formulário */
+    #partOfTheForm .inputDiv,
+    textarea{width: 81.7vw;}
+
+}

@@ -1,0 +1,180 @@
+#splashBar{
+
+    align-items: center;
+    background: #fff;
+    height: 115px;
+    padding: 0px 10%;
+
+}
+
+/* Estilização do nome da página */
+
+.pageNameBox{
+
+    align-items: center;
+    margin-right: 5.5vw;
+
+}
+.pageNameBox .imgControl{
+    
+    width: 40.02px;
+    margin-right: 3%;
+
+}
+.pageNameBox .namePage{
+
+    color: #464646;
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+.pageNameBox .bluePartFont{color: #2A7AE4;}
+
+
+/* Estilização da caixa de pesquisa */
+
+#boxInput{
+
+    border-radius: 20px;
+    background: #F5F5F5;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 8px 16px;
+
+}
+#boxInput #inputSearch{
+
+    background: #F5F5F5;
+    color: #A2A2A2;
+    width: 90%;
+
+}
+#boxInput #SearchButton{
+    
+    background: transparent;
+    vertical-align: middle;
+
+}
+
+/* Estilização do botão */
+
+.launchpadButtonBox{margin: 0 0 0 auto;}
+.launchpadButtonBox #launchpadButton{
+
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 52px;
+
+}
+
+/* Estilização da parte do banner */
+
+#partOfTheBanner{
+
+    background-image: url(https://trello.com/1/cards/628539a3e2fd8a02a9a72c72/attachments/628539a3e2fd8a02a9a72ca4/download/banner-image.png);
+    background-size: 100% 100%;
+    color: #fff;
+
+}
+
+#partOfTheBanner #sub-partOfTheBanner{
+    
+    padding: 150px 0 5% 10%;
+    font-weight: 700;
+
+}
+
+#partOfTheBanner h1{
+    
+    font-size: 52px;
+    margin: 0;
+
+}
+#partOfTheBanner p{
+
+    font-size: 22px;
+    margin: 16px 0;
+
+}
+
+#partOfTheBanner button{
+
+    height: 51px;
+    padding: 16px;
+    width: 130px;
+
+}
+
+@media screen and (max-width:960px){
+
+    #splashBar{
+        
+        height: 72px;
+        padding: 0px 5%;
+    
+    }
+
+    .pageNameBox .imgControl{width: 22.74px;}
+
+    #boxInput{width: 32vw;}
+
+    /* Parte do banner */
+    #partOfTheBanner #sub-partOfTheBanner{padding-left: 5%;}
+    #sub-partOfTheBanner h1{font-size: 40px;}
+    #sub-partOfTheBanner p{font-size: 21px;}
+    
+}
+
+@media screen and (max-width:561px){
+
+    #splashBar{
+        
+        height: 74px;
+        justify-content: space-between;
+    
+    }
+
+    /* Parte do nome da página */
+
+    .pageNameBox,
+    .launchpadButtonBox{margin: 0;}
+
+    /* Caixa de pesquisa */
+
+    #boxInput{
+
+        background: transparent;
+        order: 2;
+        padding-left: 0;
+        width: 5%;
+    
+    }
+    #SearchButton img{width: 22px;}
+    #boxInput #inputSearch{display: none;}
+
+    /* Botão login */
+
+    .launchpadButtonBox #launchpadButton{padding: 10px 48px;}
+
+    /* Parte do banner */
+
+    #partOfTheBanner {height: 100%;}
+    #partOfTheBanner #sub-partOfTheBanner{padding-bottom: 6%;}
+    #sub-partOfTheBanner h1 {font-size: 22px;}
+    #sub-partOfTheBanner p {
+        
+        font-size: 14px;
+        margin: 8px 0;
+    
+    }
+
+    #sub-partOfTheBanner button {
+        
+        font-size: 14px;
+        height: 40px;
+        padding: 12px 16px;
+        width: 119px;
+
+    }
+    
+}

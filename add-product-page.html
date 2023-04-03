@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AddProduto | AluraGeek</title>
+        <link rel="shortcut icon" href="./imagens/controlIcon.ico">
+        <link rel='stylesheet' href="css/main.css">
+        <link rel='stylesheet' href="css/header.css">
+        <link rel='stylesheet' href="css/footerSection.css">
+        <link rel='stylesheet' href="css/add-product-page.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <header>
+
+        <div id="splashBar" class='rowDisplay'>
+        
+            <div class='rowDisplay'>
+                <a href="./index.html">
+                    <div class='pageNameBox rowDisplay'>
+                    
+                        <img class='imgControl' src="imagens/control.png" alt="control">
+                        <span class="namePage"><span class="bluePartFont">Alura</span>Geek</span>
+
+                    </div>
+                </a>
+            </div>
+            
+            <div id="boxInput">
+
+                <input id='inputSearch' type="text" placeholder="O que deseja encontrar?">
+                <button id="SearchButton"><img src="imagens/magnifying-glass.png" alt="magnifying-glass"></button>
+                
+            </div>
+
+            <div class='launchpadButtonBox'>
+
+                <a href='pageLogin.html'>
+                    <button id="launchpadButton" class="whiteButton">Menu administrador</button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="masterCarton">
+
+            <form id="addProductForm">
+
+                <h2>Adicionar novo produto</h2>
+
+                <div class="inputDiv columnDisplay" id="urlBox">
+                    <label>URL da imagem</label>
+                    <input id='url' pattern='(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})+[.png, .jpg, .jpeg]' type="text" required>
+                    <span id="spanUrl" class="spanError"></span>
+                </div>
+
+                <div class="inputDiv columnDisplay" id="categoryBox">
+                    <label>Categoria</label>
+                    <input type="text" id="category" required maxlength="100" pattern='^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$'>
+                    <span id="spanCategory" class="spanError"></span>
+                </div>
+
+                <div class="inputDiv columnDisplay" id="productNameBox">
+                    <label>Nome do produto</label>
+                    <input id='productName' type="text" maxlength="100" pattern='^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ1234567890 ]+$' required>
+                    <span id="productNameSpan" class="spanError"></span>
+                </div>
+
+                <div class="inputDiv columnDisplay" id="priceBox">
+                    <label>Preço do produto</label>
+                    <input type="text" id="priceField" required>
+                    <span id="priceSpan" class="spanError"></span>
+                </div>
+
+                <div class="inputDiv columnDisplay" id="productDescriptionBox">
+                    <textarea id='text' placeholder="Descrição do produto" required maxlength="3000"></textarea>
+                </div>
+                <span id="textSpan" class="spanError"></span>
+
+                <input id="addProductButton" class='blueButton' type="submit" value="Adicionar produto">
+
+            </form>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <div id='contactSection' class="rowDisplay">
+
+            <div id='sub_contactSection' class="rowDisplay">
+                <div class='pageNameBox rowDisplay'>
+
+                    <img class='imgControl' src="imagens/control.png" alt="control">
+                    <span class="namePage"><span class="bluePartFont">Alura</span>Geek</span>
+
+                </div>
+
+                <ul id="storeInformation">
+
+                    <li><a href='' class="linkFooter">Quem somos nós</a></li>
+                    <li><a href='' class="linkFooter">Política de privacidade</a></li>
+                    <li><a href='' class="linkFooter">Programa fidelidade</a></li>
+                    <li><a href='' class="linkFooter">Nossas lojas</a></li>
+                    <li><a href='' class="linkFooter">Quero ser franqueado</a></li>
+                    <li><a href='' class="linkFooter">Anuncie aqui</a></li>
+
+                </ul>
+            </div>
+
+            <form id='partOfTheForm' class="columnDisplay">
+
+                <h2>Fale conosco</h2>
+
+                <div class="inputDiv columnDisplay" id="nameBoxOnForm">
+                    <label>Nome</label>
+                    <input id='name' type="text" required pattern='^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$' maxlength="30">
+                </div>
+                <span id="spanName" class="spanError"></span>
+
+                <textarea id='textBoxOnForm' placeholder="Escreva sua mensagem" required maxlength="3000"></textarea>
+                <span id="spanText" class="spanError"></span>
+
+                <button class='blueButton' id="buttonSubmit">Enviar mensagem</button>
+
+            </form>
+        </div>
+
+        <div id="copyright"><p>Desenvolvido por Luana Maria</br> 2023</p></div>
+
+    </footer>
+    
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+    <script src='js/addProduct.js'></script>
+    <script src="js/pagContato.js"></script>
+
+</body>
+</html>

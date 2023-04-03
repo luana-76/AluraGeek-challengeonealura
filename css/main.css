@@ -1,0 +1,105 @@
+body{
+    
+    box-sizing: border-box;
+    background: #E5E5E5;;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+li{list-style: none;}
+a{text-decoration: none;}
+
+input,
+textarea{
+
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+
+}
+
+main a{
+
+    color: #2A7AE4;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+button{
+
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.rowDisplay{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.columnDisplay{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blueButton{
+
+    font-family: 'Raleway', sans-serif;
+    background: #2A7AE4;
+    color: #fff;
+    font-size: 16px;
+
+}
+.blueButton:hover{background: #5595E9;}
+
+.whiteButton{
+
+    background: transparent;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+
+}
+.whiteButton:hover{background: #D4E4FA;}
+
+/* Configuração de erro */
+
+.spanError{
+
+    color: red;
+    font-size: 13px;
+
+}
+.spanError{margin: 5px 0 20px;}
+.error{border: 1px solid red;}
+
+/* Estilização do scroll */
+
+body::-webkit-scrollbar-track{
+
+	border-radius:0;
+	background-color: #D0D4CE;
+
+}
+
+body::-webkit-scrollbar{
+
+	width: 6px;
+	background-color: #D0D4CE;
+
+}
+
+body::-webkit-scrollbar-thumb{
+
+	border-radius:0;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #71806B;
+    
+}

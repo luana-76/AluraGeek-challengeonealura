@@ -1,0 +1,141 @@
+/* Estilização da parte do titulo */
+
+.sectionTitle h2{font-size: 32px;}
+.sectionTitle #addProduct{
+
+    height: 51px;
+    width: 164px;
+
+}
+
+#addProduct{margin:0;}
+
+/* Agrupamento das divs dos produtos */
+.parentBoxOfSmallBoxes{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: auto;
+
+}
+
+/* Tirando e colocando margin em algumas divs filhas (divs dos produtos) */
+.parentBoxOfSmallBoxes div{margin-left: 7%;}
+.parentBoxOfSmallBoxes div:nth-child(7),
+.parentBoxOfSmallBoxes div:nth-child(13){margin:0;}
+
+
+/* Estilização das divs dos produtos */
+
+.productBox{margin-bottom: 64px;}
+
+/* Div da imagem */
+.imageDiv{
+
+    background-size: 100% 100%;
+    height: 181px;
+    text-align: end;
+    width: 100%;
+
+}
+
+/* Colocando imagens nas caixas */
+
+#imageBox1{background-image: url(../imagens/p6.png);}
+#imageBox2{background-image: url(../imagens/p5.png);}
+#imageBox3{background-image: url(../imagens/p4.png);}
+#imageBox4{background-image: url(../imagens/p3.png);}
+#imageBox5{background-image: url(../imagens/p2.png);}
+#imageBox6{background-image: url(../imagens/p1.png);}
+
+
+#imageBox7{background-image: url(../imagens/p7.png);}
+#imageBox8{background-image: url(../imagens/p8.png);}
+#imageBox9{background-image: url(../imagens/p9.png);}
+#imageBox10{background-image: url(../imagens/p10.png);}
+#imageBox11{background-image: url(../imagens/p11.png);}
+#imageBox12{background-image: url(../imagens/p12.png);}
+
+#imageBox13{background-image: url(../imagens/p13.png);}
+#imageBox14{background-image: url(../imagens/p14.png);}
+#imageBox15{background-image: url(../imagens/p15.png);}
+#imageBox16{background-image: url(../imagens/p16.png);}
+#imageBox17{background-image: url(../imagens/p17.png);}
+#imageBox18{background-image: url(../imagens/p18.png);}
+
+/* Estilizando botões interno da div da imagem*/
+.buttonsBinPencil{
+
+    background: transparent;
+    border: none;
+
+}
+.buttonsBinPencil img[alt='pencil']{margin: 11px 0.5vw 0 0.5vw;}
+
+/* Estilizando número do produto */
+.productNumber{color: #464646;}
+
+@media screen and (max-width:960px){
+
+    .sectionAlignment {margin: 39px 0;}
+
+    /* Estilização do titulo */
+
+    .sectionTitle h2{font-size: 22px;}
+    .sectionTitle a{margin: 0 5%;}
+    .sectionTitle #addProduct {
+
+            height: 46px;
+            margin: 0;
+            width: 188px;
+
+    }
+    
+    /* Agrupamento das divs dos produtos */
+    .parentBoxOfSmallBoxes {
+    
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    /* Tirando e colocando margin em algumas divs filhas (divs dos produtos) */
+    .parentBoxOfSmallBoxes div:nth-child(7){margin-left: 7%;}
+
+    .parentBoxOfSmallBoxes div:nth-child(5),
+    .parentBoxOfSmallBoxes div:nth-child(9),
+    .parentBoxOfSmallBoxes div:nth-child(13),
+    .parentBoxOfSmallBoxes div:nth-child(17){margin:0;}
+
+    .productBox{margin-bottom: 16px;}
+
+}
+
+@media screen and (max-width:561px){
+
+    .sectionAlignment{margin: 32px 0;}
+
+    /* Estilização do titulo */
+
+    .sectionAlignment .sectionTitle{
+
+        align-items: flex-start;
+        flex-direction: column;
+
+    }
+    .sectionTitle h2{margin-bottom: 16px;}
+
+    /* Agrupamento das divs dos produtos */
+    .parentBoxOfSmallBoxes{grid-template-columns: 1fr 1fr;}
+
+    /* Tirando e colocando margin em algumas divs filhas (divs dos produtos) */
+
+    .parentBoxOfSmallBoxes div:nth-child(3),
+    .parentBoxOfSmallBoxes div:nth-child(7),
+    .parentBoxOfSmallBoxes div:nth-child(11),
+    .parentBoxOfSmallBoxes div:nth-child(15){margin:0;}
+
+    .productBox{margin-bottom: 40px;}
+    
+}

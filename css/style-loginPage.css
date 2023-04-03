@@ -1,0 +1,86 @@
+/* Parte da barra inicial */
+.pageNameBox {margin-right: 3.5vw}
+#boxInput #inputSearch {width: 393px;}
+
+/* Sessão da parte do login */
+
+#loginSection{
+
+    align-items: center;
+    justify-content: center;
+    height: 77vh;
+
+}
+
+#loginSection h2{
+
+    color:#464646;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 24px;
+
+}
+
+#loginSection input,
+#loginSection #submitButton{
+
+    height: 63.13px;
+    padding-left: 12px;
+    width: 423px;     
+
+}
+
+
+#loginSection input{
+
+    border-radius: 4px;
+    border-bottom: 1px solid #c3c3c3;
+    color: #A2A2A2;
+      
+}
+#loginSection #submitButton{
+    
+    align-items: center;
+    border-radius: 0;
+    background: #2A7AE4;
+    cursor: pointer;
+    color: #fff;
+    justify-content: center;
+
+}
+#loginSection #submitButton a{
+
+    color: #fff;
+    font-weight: 500;
+
+}
+
+@media screen and (max-width:960px){
+
+    #loginSection h2{margin: 0 0 16px 0;}
+
+    #loginSection input{width: 352px;}
+    #loginSection #submitButton{
+
+        height: 40px;
+        padding: 6px 12px;
+        width: 109px;
+
+    }
+
+}
+@media screen and (max-width:561px){
+    
+    /* Sessão da barra inicial */
+    #boxInput,
+    #SearchButton{padding: 0;}
+
+    /* Sessão da parte do login */
+    #loginSection input{width: 275px;}
+
+    /* Estilização do span de erro */
+    .spanError,
+    .spanError{font-size:11px;}
+
+}

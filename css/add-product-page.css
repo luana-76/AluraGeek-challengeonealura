@@ -1,0 +1,95 @@
+/* Parte da barra inicial */
+
+#boxInput{width: 34%;}
+
+.launchpadButtonBox #launchpadButton{padding: 17px 19px;}
+
+/* Parte do formulário */
+
+#masterCarton{
+
+    margin: 64px auto;
+    width: 50vw;
+
+}
+
+#addProductForm h2{
+
+    font-size: 32px;
+    margin: 0;
+
+}
+
+#addProductForm .inputDiv{
+    
+    background: #fff;
+    border-radius: 4px;
+    height: 56px;
+    margin-top: 16px;
+    padding: 8px 12px;
+    width: auto;
+
+}
+
+#addProductForm #productDescriptionBox{
+
+    height: 105px;
+    padding:0;
+
+}
+
+#productDescriptionBox textarea{
+    
+    border: none;
+    margin: 16px 12px;
+    padding: 0;
+    width: calc(94% - 16px - 16px);
+
+}
+
+#addProductButton{
+
+    cursor: pointer;
+    margin-top: 16px;
+    padding: 16px;
+    width: 100%;
+
+}
+
+.spanError{margin: 0;}
+@media screen and (max-width:960px){
+    
+    #masterCarton{
+
+        margin: 32px 5%;
+        width: auto;
+        
+    }
+
+    #addProductForm h2{font-size: 22px;}
+
+}
+
+@media screen and (max-width:561px){
+
+    #masterCarton{margin: 16px 5%;}
+
+    #boxInput{
+        
+        padding: 0;
+        width: auto;
+    
+    }
+
+}
+
+@media screen and (max-width:455px){
+
+    .launchpadButtonBox #launchpadButton {
+
+        font-size: 14px;
+        padding: 17px 8px;
+        
+    }
+
+}

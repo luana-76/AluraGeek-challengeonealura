@@ -1,0 +1,106 @@
+/* Parte do título */
+
+.sectionTitle{align-items: start;}
+.sectionTitle h2{margin: 0;}
+
+/* Alinhamento das caixas */
+
+#alignment{
+    
+    flex-wrap: nowrap;
+    margin: 32px 10%;
+
+}
+
+#internalAlignment{align-items: center;}
+
+/* Parte do texto */
+
+#textField{
+    
+    color: #464646;
+    margin-left: 16px;
+
+}
+
+#textField h1,
+#textField p{
+    
+    margin: 0;
+    /*font-size: 90%;*/
+
+}
+
+#textField p{margin-top: 8px;}
+
+#textField h1{
+
+    font-size: 4vw;
+    font-weight: 500;
+    margin-bottom: 8px;
+
+}
+
+#textField span{
+
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+/* Parte da caixa dos produtos*/
+
+.parentBoxOfSmallBoxes {
+    
+    margin: 16px 0 0 0;
+    flex-wrap:nowrap;
+
+}
+
+.productBoxSection{margin: 64px 0 0 0;}
+
+@media screen and (max-width:1110px){#mainProductImage{width: 50vw;}}
+@media screen and (min-width:1110px){#textField h1{font-size: 52px;}}
+
+@media screen and (max-width:960px){
+
+    .displayNone{display:none;}/* Para tirar algumas caixas */
+
+    #alignment{margin: 32px 5%;}
+    .internalAlignment{align-items: normal;}
+
+    #textField h1{font-size: 22px;}
+
+    #textField p{font-size: 84%;}
+
+    #mainProductImage {
+
+        height: 157px;
+        width: 254px;
+
+    }
+
+}
+
+@media screen and (max-width:561px){
+
+    #alignment{margin: 0 0 16px 0;}
+
+    #internalAlignment{flex-direction: column;}
+
+    #mainProductImage{
+        
+        height: auto;
+        width:100%;
+
+    }
+
+    #textField{margin: 16px 5%;}
+
+    #textField p {font-size: 14px;}
+
+    .productBoxSection{margin: 16px 5%;}
+
+    .parentBoxOfSmallBoxes {flex-wrap: wrap;}
+    .parentBoxOfSmallBoxes:nth-child(3){margin-right: none;}
+}
